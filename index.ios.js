@@ -13,6 +13,7 @@ import {
 import ParallaxScrollView from 'react-native-parallax-scroll-view';
 import Icon from 'react-native-vector-icons/FontAwesome';
 import {searchPlaylist} from './api/playlist';
+import {PlaylistLink} from './components/playlist-link';
 
 const STICKY_HEADER_HEIGHT = 60;
 const HEADER_HEIGHT = 500;
@@ -124,12 +125,8 @@ class yradio extends Component {
         style={styles.container}
         dataSource={this.state.dataSource}
         enableEmptySections={true}
-        renderRow={(rowData) => (
-          <View key={rowData.id} style={styles.row}>
-            <Text style={styles.rowText}>
-              {rowData.name}
-            </Text>
-          </View>
+        renderRow={(playlist) => (
+          <PlaylistLink key={playlist.id} playlist={playlist}/>
         )}
         renderHeader={() => (
           <ListHeader
@@ -204,15 +201,6 @@ const styles = StyleSheet.create({
     position: 'absolute',
     bottom: 8,
     right: 24,
-  },
-  row: {
-    overflow: 'hidden',
-    paddingHorizontal: 10,
-    height: 60,
-    backgroundColor: 'white',
-    borderColor: '#ccc',
-    borderBottomWidth: 1,
-    justifyContent: 'center'
   },
   stickySection: {
     height: STICKY_HEADER_HEIGHT,

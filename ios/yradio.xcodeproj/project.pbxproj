@@ -32,6 +32,10 @@
 		84606AD26817450EB980440D /* Zocial.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D51038DD0087431E8D9F9F5A /* Zocial.ttf */; };
 		89C23086300749BCA664F548 /* EvilIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5DB7A95C01E6434B9657CAFE /* EvilIcons.ttf */; };
 		AD76DDFF34CA477DB10EBEA0 /* Entypo.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 299329316EF54998A25096EC /* Entypo.ttf */; };
+		F68F5D971D41A2B400286132 /* ShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F68F5D961D41A2B400286132 /* ShareViewController.swift */; };
+		F68F5D9A1D41A2B400286132 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F68F5D981D41A2B400286132 /* MainInterface.storyboard */; };
+		F68F5DA51D41A84B00286132 /* GetURL.js in Resources */ = {isa = PBXBuildFile; fileRef = F68F5DA41D41A84B00286132 /* GetURL.js */; };
+		F68F5DB31D42AEC100286132 /* sharePlaylist.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = F68F5D941D41A2B400286132 /* sharePlaylist.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -119,7 +123,28 @@
 			remoteGlobalIDString = 5DBEB1501B18CEA900B34395;
 			remoteInfo = RNVectorIcons;
 		};
+		F68F5DB41D42AEC100286132 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F68F5D931D41A2B400286132;
+			remoteInfo = sharePlaylist;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F68F5DB61D42AEC200286132 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				F68F5DB31D42AEC100286132 /* sharePlaylist.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		008F07F21AC5B25A0029DE68 /* main.jsbundle */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = main.jsbundle; sourceTree = "<group>"; };
@@ -152,6 +177,12 @@
 		BE35B10EE4554B2D9ADED325 /* libRNVectorIcons.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRNVectorIcons.a; sourceTree = "<group>"; };
 		D51038DD0087431E8D9F9F5A /* Zocial.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Zocial.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Zocial.ttf"; sourceTree = "<group>"; };
 		E6CD8B99183648948ADC0869 /* FontAwesome.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome.ttf"; sourceTree = "<group>"; };
+		F68F5D941D41A2B400286132 /* sharePlaylist.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = sharePlaylist.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		F68F5D961D41A2B400286132 /* ShareViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareViewController.swift; sourceTree = "<group>"; };
+		F68F5D991D41A2B400286132 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		F68F5D9B1D41A2B400286132 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F68F5DA41D41A84B00286132 /* GetURL.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = GetURL.js; sourceTree = "<group>"; };
+		F68F5DA61D429D7E00286132 /* yradio.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = yradio.entitlements; path = yradio/yradio.entitlements; sourceTree = "<group>"; };
 		FD4E6811EF854D3B9462581D /* Octicons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Octicons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Octicons.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -179,6 +210,13 @@
 				00C302EA1ABCBA2D00DB3ED1 /* libRCTVibration.a in Frameworks */,
 				139FDEF61B0652A700C62182 /* libRCTWebSocket.a in Frameworks */,
 				4D30ADB2F52047518035C133 /* libRNVectorIcons.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F68F5D911D41A2B400286132 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +299,7 @@
 		13B07FAE1A68108700A75B9A /* yradio */ = {
 			isa = PBXGroup;
 			children = (
+				F68F5DA61D429D7E00286132 /* yradio.entitlements */,
 				008F07F21AC5B25A0029DE68 /* main.jsbundle */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.m */,
@@ -320,6 +359,7 @@
 				13B07FAE1A68108700A75B9A /* yradio */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				00E356EF1AD99517003FC87E /* yradioTests */,
+				F68F5D951D41A2B400286132 /* sharePlaylist */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				97EE1AE7FC40473A847FA970 /* Resources */,
 			);
@@ -332,6 +372,7 @@
 			children = (
 				13B07F961A680F5B00A75B9A /* yradio.app */,
 				00E356EE1AD99517003FC87E /* yradioTests.xctest */,
+				F68F5D941D41A2B400286132 /* sharePlaylist.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -357,6 +398,17 @@
 				F68F5D8B1D41625A00286132 /* libRNVectorIcons.a */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		F68F5D951D41A2B400286132 /* sharePlaylist */ = {
+			isa = PBXGroup;
+			children = (
+				F68F5DA41D41A84B00286132 /* GetURL.js */,
+				F68F5D961D41A2B400286132 /* ShareViewController.swift */,
+				F68F5D981D41A2B400286132 /* MainInterface.storyboard */,
+				F68F5D9B1D41A2B400286132 /* Info.plist */,
+			);
+			path = sharePlaylist;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -388,15 +440,34 @@
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
+				F68F5DB61D42AEC200286132 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				F68F5DB51D42AEC100286132 /* PBXTargetDependency */,
 			);
 			name = yradio;
 			productName = "Hello World";
 			productReference = 13B07F961A680F5B00A75B9A /* yradio.app */;
 			productType = "com.apple.product-type.application";
+		};
+		F68F5D931D41A2B400286132 /* sharePlaylist */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F68F5D9F1D41A2B400286132 /* Build configuration list for PBXNativeTarget "sharePlaylist" */;
+			buildPhases = (
+				F68F5D901D41A2B400286132 /* Sources */,
+				F68F5D911D41A2B400286132 /* Frameworks */,
+				F68F5D921D41A2B400286132 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = sharePlaylist;
+			productName = sharePlaylist;
+			productReference = F68F5D941D41A2B400286132 /* sharePlaylist.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -404,7 +475,8 @@
 		83CBB9F71A601CBA00E9B192 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 610;
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = Facebook;
 				TargetAttributes = {
 					00E356ED1AD99517003FC87E = {
@@ -412,7 +484,16 @@
 						TestTargetID = 13B07F861A680F5B00A75B9A;
 					};
 					13B07F861A680F5B00A75B9A = {
-						DevelopmentTeam = PLS9GFNT2J;
+						DevelopmentTeam = RRWZ6M66CZ;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+					F68F5D931D41A2B400286132 = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = RRWZ6M66CZ;
 					};
 				};
 			};
@@ -477,6 +558,7 @@
 			targets = (
 				13B07F861A680F5B00A75B9A /* yradio */,
 				00E356ED1AD99517003FC87E /* yradioTests */,
+				F68F5D931D41A2B400286132 /* sharePlaylist */,
 			);
 		};
 /* End PBXProject section */
@@ -586,6 +668,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F68F5D921D41A2B400286132 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F68F5D9A1D41A2B400286132 /* MainInterface.storyboard in Resources */,
+				F68F5DA51D41A84B00286132 /* GetURL.js in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
@@ -623,6 +714,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F68F5D901D41A2B400286132 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F68F5D971D41A2B400286132 /* ShareViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -630,6 +729,11 @@
 			isa = PBXTargetDependency;
 			target = 13B07F861A680F5B00A75B9A /* yradio */;
 			targetProxy = 00E356F41AD99517003FC87E /* PBXContainerItemProxy */;
+		};
+		F68F5DB51D42AEC100286132 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F68F5D931D41A2B400286132 /* sharePlaylist */;
+			targetProxy = F68F5DB41D42AEC100286132 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -641,6 +745,14 @@
 			);
 			name = LaunchScreen.xib;
 			path = yradio;
+			sourceTree = "<group>";
+		};
+		F68F5D981D41A2B400286132 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F68F5D991D41A2B400286132 /* Base */,
+			);
+			name = MainInterface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -661,6 +773,7 @@
 					"$(inherited)",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/yradio.app/yradio";
 			};
@@ -678,6 +791,7 @@
 					"$(inherited)",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/yradio.app/yradio";
 			};
@@ -687,9 +801,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = yradio/yradio.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEAD_CODE_STRIPPING = NO;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
@@ -703,8 +820,11 @@
 					"-ObjC",
 					"-lc++",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.seatme.yradio;
 				PRODUCT_NAME = yradio;
 				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "yradio-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -712,8 +832,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = yradio/yradio.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
@@ -727,8 +850,10 @@
 					"-ObjC",
 					"-lc++",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.seatme.yradio;
 				PRODUCT_NAME = yradio;
 				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "yradio-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -752,6 +877,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -820,6 +946,43 @@
 			};
 			name = Release;
 		};
+		F68F5DA01D41A2B400286132 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_TESTABILITY = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = sharePlaylist/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.seatme.yradio.sharePlaylist;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F68F5DA11D41A2B400286132 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = sharePlaylist/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.seatme.yradio.sharePlaylist;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -846,6 +1009,15 @@
 			buildConfigurations = (
 				83CBBA201A601CBA00E9B192 /* Debug */,
 				83CBBA211A601CBA00E9B192 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F68F5D9F1D41A2B400286132 /* Build configuration list for PBXNativeTarget "sharePlaylist" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F68F5DA01D41A2B400286132 /* Debug */,
+				F68F5DA11D41A2B400286132 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
